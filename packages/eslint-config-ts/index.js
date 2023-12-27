@@ -1,11 +1,17 @@
 module.exports = {
     extends: [
-        'plugin:@typescript-eslint/recommended',
         '@semivan/eslint-config',
+        'plugin:@typescript-eslint/recommended',
     ],
     plugins: [
         '@typescript-eslint',
     ],
     parser: '@typescript-eslint/parser',
-    rules: {},
+    rules: {
+        'indent': 'off',
+        'no-shadow': 'off',
+        'no-useless-constructor': 'off',
+        '@stylistic/indent': 'off',
+        '@typescript-eslint/no-shadow': 'error',
+    },
 };

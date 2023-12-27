@@ -18,7 +18,7 @@ module.exports = {
     'class-methods-use-this': 'error',
 
     // Require return statements to either always or never specify values
-    'consistent-return': 'error',
+    'consistent-return': 'off',
 
     // Specify curly brace conventions for all control statements
     'curly': ['error', 'multi-line'],
@@ -270,5 +270,5 @@ module.exports = {
     'vars-on-top': 'error',
 
     // Require or disallow Yoda conditions
-    'yoda': 'error',
+    'yoda': ['error', 'never'],
 };

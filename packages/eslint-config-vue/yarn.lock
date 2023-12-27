@@ -106,11 +106,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@semivan/eslint-config-ts@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "@semivan/eslint-config-ts@npm:1.0.4"
+  dependencies:
+    "@semivan/eslint-config": "npm:^1.0.1"
+  peerDependencies:
+    "@stylistic/eslint-plugin": ^1.5.1
+    "@typescript-eslint/eslint-plugin": ^6.15.0
+    eslint: ^8.56.0
+    typescript: ^5.3.3
+  checksum: 839d93be8b0627dfb5a35795d529309e07709752f0d51dc4d4ddb777cee4077be76cc18a5cabb0e6900b9ce9070e5bfea90ee6550bdc776e0c0bb3988efe39ec
+  languageName: node
+  linkType: hard
+
 "@semivan/eslint-config-vue@workspace:.":
   version: 0.0.0-use.local
   resolution: "@semivan/eslint-config-vue@workspace:."
   dependencies:
-    "@semivan/eslint-config": "npm:^1.0.0"
+    "@semivan/eslint-config-ts": "npm:^1.0.4"
     "@stylistic/eslint-plugin": "npm:^1.5.1"
     "@vue/eslint-config-typescript": "npm:^12.0.0"
     eslint: "npm:^8.56.0"
@@ -118,20 +132,19 @@ __metadata:
     typescript: "npm:^5.3.3"
   peerDependencies:
     "@stylistic/eslint-plugin": ^1.5.1
-    "@vue/eslint-config-typescript": ^12.0.0
     eslint: ^8.56.0
     eslint-plugin-vue: ^9.19.2
     typescript: ^5.3.3
   languageName: unknown
   linkType: soft
 
-"@semivan/eslint-config@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@semivan/eslint-config@npm:1.0.0"
+"@semivan/eslint-config@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@semivan/eslint-config@npm:1.0.1"
   peerDependencies:
     "@stylistic/eslint-plugin": ^1.5.1
     eslint: ^8.56.0
-  checksum: a0f5f2f1e860ab74ca6a34021153398a3010259081fe4545873ac7afb41623e8ea7771b9bbfacc6b19a887d1d863b22588b6874d5f493506441e939a3ac09d1b
+  checksum: fff870ab0db4c59c225af9c0ba89ba0b5b21615f70f830c749735c7348cb570e7b12d5803ec3ae40467df54c74753a589ab2d3d33414dc5f40193a97a3c64853
   languageName: node
   linkType: hard
 
