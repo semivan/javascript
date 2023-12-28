@@ -17,7 +17,7 @@ module.exports = {
     'func-name-matching': 'off',
 
     // Require function expressions to have a name
-    'func-names': 'warn',
+    'func-names': ['warn', 'as-needed'],
 
     // Enforces use of function declarations or expressions
     'func-style': 'off',

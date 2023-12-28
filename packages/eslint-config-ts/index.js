@@ -10,6 +10,7 @@ module.exports = {
     rules: {
         'indent': 'off',
         'no-shadow': 'off',
+        'no-invalid-this': 'off',
         'no-useless-constructor': 'off',
         '@stylistic/indent': 'off',
         '@typescript-eslint/no-shadow': 'error',

@@ -110,7 +110,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@semivan/eslint-config-ts@workspace:."
   dependencies:
-    "@semivan/eslint-config": "npm:^1.0.1"
+    "@semivan/eslint-config": "npm:^1.0.2"
     "@stylistic/eslint-plugin": "npm:^1.5.1"
     "@typescript-eslint/eslint-plugin": "npm:^6.15.0"
     "@typescript-eslint/parser": "npm:^6.15.0"
@@ -124,13 +124,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@semivan/eslint-config@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@semivan/eslint-config@npm:1.0.1"
+"@semivan/eslint-config@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@semivan/eslint-config@npm:1.0.2"
   peerDependencies:
     "@stylistic/eslint-plugin": ^1.5.1
     eslint: ^8.56.0
-  checksum: fff870ab0db4c59c225af9c0ba89ba0b5b21615f70f830c749735c7348cb570e7b12d5803ec3ae40467df54c74753a589ab2d3d33414dc5f40193a97a3c64853
+  checksum: cebe10e8a54b3e0660159475b5c56806ff8d5bf1643a52078673009dcf0dedbd2690cdadaf09e09872f321b5e825ce64d5b49623ccf9cf57f86e593639a7c1a1
   languageName: node
   linkType: hard
 
