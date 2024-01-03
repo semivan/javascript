@@ -106,6 +106,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@semivan/eslint-config@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@semivan/eslint-config@workspace:."
+  dependencies:
+    "@stylistic/eslint-plugin": "npm:^1.5.1"
+    eslint: "npm:^8.56.0"
+  peerDependencies:
+    "@stylistic/eslint-plugin": ^1.5.1
+    eslint: ^8.56.0
+  languageName: unknown
+  linkType: soft
+
 "@stylistic/eslint-plugin-js@npm:1.5.1, @stylistic/eslint-plugin-js@npm:^1.5.1":
   version: 1.5.1
   resolution: "@stylistic/eslint-plugin-js@npm:1.5.1"
@@ -442,15 +454,6 @@ __metadata:
   checksum: 9497d4dd307d845bd7f75180d8188bb17ea8c151c1edbf6b6717c100e104d629dc2dfb687686181b0f4b7d732c7dfdc4d5e7a8ff72de1b0ca283a75bbb3a9cd9
   languageName: node
   linkType: hard
-
-"eslint-config-semivan@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "eslint-config-semivan@workspace:."
-  dependencies:
-    "@stylistic/eslint-plugin": "npm:^1.5.1"
-    eslint: "npm:^8.56.0"
-  languageName: unknown
-  linkType: soft
 
 "eslint-scope@npm:^7.2.2":
   version: 7.2.2

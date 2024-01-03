@@ -1,16 +1,19 @@
 {
     "name": "@semivan/eslint-config-ts",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "TypeScript ESLint config",
-    "main": "index.js",
     "author": "Ivan Semenikhin <semenihin.ivan@gmail.com>",
     "license": "MIT",
+    "main": "src/index.js",
+    "files": [
+        "src"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/semivan/javascript"
     },
     "dependencies": {
-        "@semivan/eslint-config": "^1.0.2"
+        "@semivan/eslint-config": "^1.0.3"
     },
     "devDependencies": {
         "@stylistic/eslint-plugin": "^1.5.1",
