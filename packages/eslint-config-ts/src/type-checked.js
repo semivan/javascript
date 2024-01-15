@@ -5,7 +5,7 @@ module.exports = {
     rules: {
         ...rules.js,
         ...rules.ts.main,
-        ...rules.vue,
+        ...rules.ts.typeChecked,
         ...rules.legacy,
     },
 };

@@ -1,6 +1,9 @@
 init:
 	yarn install
 
+update.rules:
+	yarn add @semivan/eslint-config
+
 lint:
 	yarn eslint .
 
@@ -12,6 +15,7 @@ publish.preview:
 
 # make publish v=<patch | minor | major>
 publish:
+	make update.rules
 	make lint
 	yarn version $(v)
 	npm publish --access public

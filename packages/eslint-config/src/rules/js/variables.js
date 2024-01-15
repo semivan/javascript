@@ -45,8 +45,8 @@ module.exports = {
 
     // Disallow use of variables before they are defined
     'no-use-before-define': ['error', {
-        functions: true,
-        classes: true,
+        functions: false,
+        classes: false,
         variables: true,
     }],
 };

@@ -37,6 +37,7 @@ module.exports = {
     // Encourages use of dot notation whenever possible
     'dot-notation': ['error', {
         allowKeywords: true,
+        allowPattern: '^[a-z]+(_[a-z]+)+$',
     }],
 
     // Require the use of === and !==
@@ -72,8 +73,9 @@ module.exports = {
     // Disallow empty functions
     'no-empty-function': ['error', {
         allow: [
-            'functions',
             'arrowFunctions',
+            'constructors',
+            'functions',
             'methods',
         ],
     }],
@@ -235,7 +237,9 @@ module.exports = {
     'no-useless-return': 'error',
 
     // Disallow use of void operator
-    'no-void': 'error',
+    'no-void': ['error', {
+        allowAsStatement: true,
+    }],
 
     // Disallow usage of configurable warning terms in comments: e.g. todo
     'no-warning-comments': 'off',

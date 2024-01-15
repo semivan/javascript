@@ -1,10 +1,14 @@
 {
     "name": "@semivan/eslint-config",
-    "version": "1.0.3",
+    "version": "1.2.6",
     "description": "JavaScript ESLint config",
     "author": "Ivan Semenikhin <semenihin.ivan@gmail.com>",
     "license": "MIT",
-    "main": "src/index.js",
+    "exports": {
+        ".": "./src/index.js",
+        "./rules": "./src/rules/index.js",
+        "./package.json": "./package.json"
+    },
     "files": [
         "src"
     ],

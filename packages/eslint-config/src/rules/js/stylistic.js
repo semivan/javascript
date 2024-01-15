@@ -202,12 +202,15 @@ module.exports = {
     }],
 
     // Enforce a maximum line length
-    '@stylistic/max-len': ['error', 120, 4, {
+    '@stylistic/max-len': ['error', {
+        code: 120,
+        tabWidth: 4,
+        ignoreComments: true,
+        ignoreTrailingComments: true,
         ignoreUrls: true,
-        ignoreComments: false,
-        ignoreRegExpLiterals: true,
         ignoreStrings: true,
         ignoreTemplateLiterals: true,
+        ignoreRegExpLiterals: true,
     }],
 
     // Enforce a maximum number of statements allowed per line

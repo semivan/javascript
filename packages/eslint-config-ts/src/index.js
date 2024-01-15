@@ -1,18 +1,10 @@
+const rules = require('@semivan/eslint-config/rules');
+
 module.exports = {
-    extends: [
-        '@semivan/eslint-config',
-        'plugin:@typescript-eslint/recommended',
-    ],
-    plugins: [
-        '@typescript-eslint',
-    ],
-    parser: '@typescript-eslint/parser',
+    ...require('./base'),
     rules: {
-        'indent': 'off',
-        'no-shadow': 'off',
-        'no-invalid-this': 'off',
-        'no-useless-constructor': 'off',
-        '@stylistic/indent': 'off',
-        '@typescript-eslint/no-shadow': 'error',
+        ...rules.js,
+        ...rules.ts.main,
+        ...rules.legacy,
     },
 };
