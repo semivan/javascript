@@ -1,6 +1,6 @@
 {
     "name": "@semivan/eslint-config",
-    "version": "1.2.7",
+    "version": "1.2.8",
     "description": "JavaScript ESLint config",
     "author": "Ivan Semenikhin <semenihin.ivan@gmail.com>",
     "license": "MIT",
@@ -17,8 +17,8 @@
         "url": "https://github.com/semivan/javascript"
     },
     "devDependencies": {
-        "@stylistic/eslint-plugin": "^1.5.4",
-        "eslint": "^8.56.0"
+        "@stylistic/eslint-plugin": "^1.7.0",
+        "eslint": "^8.57.0"
     },
     "peerDependencies": {
         "@stylistic/eslint-plugin": "*",
