@@ -5,6 +5,5 @@ module.exports = {
     rules: {
         ...rules.js,
         ...rules.ts.main,
-        ...rules.legacy,
     },
 };

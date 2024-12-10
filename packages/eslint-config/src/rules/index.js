@@ -1,6 +1,9 @@
-module.exports = {
-    js: require('./js'),
-    ts: require('./ts'),
-    vue: require('./vue'),
-    legacy: require('./legacy'),
+import js from './js/index.js';
+import ts from './ts/index.js';
+import vue from './vue/index.js';
+
+export default {
+    js,
+    ts,
+    vue,
 };

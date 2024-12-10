@@ -8,6 +8,5 @@ module.exports = {
         ...rules.ts.typeChecked,
         'dot-notation': 'off',
         ...rules.vue,
-        ...rules.legacy,
     },
 };

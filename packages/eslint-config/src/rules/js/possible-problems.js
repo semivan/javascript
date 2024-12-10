@@ -1,4 +1,13 @@
-module.exports = {
+export default {
+    // TODO: ?
+    // Enforces return statements in callbacks of array's methods
+    'array-callback-return': ['error', {
+        allowImplicit: true,
+    }],
+
+    // Verify super() callings in constructors
+    'constructor-super': 'error',
+
     // Enforce “for” loop update clause moving the counter in the right direction
     'for-direction': 'error',
 
@@ -13,20 +22,26 @@ module.exports = {
     // Disallow await inside of loops
     'no-await-in-loop': 'error',
 
+    // Disallow modifying variables of class declarations
+    'no-class-assign': 'error',
+
     // Disallow comparisons to negative zero
     'no-compare-neg-zero': 'error',
 
     // Disallow assignment in conditional expressions
     'no-cond-assign': ['error', 'always'],
 
-    // Disallow use of console
-    'no-console': 'warn',
+    // Disallow modifying variables that are declared using const
+    'no-const-assign': 'error',
 
     // Disallows expressions where the operation doesn't affect the value
     'no-constant-binary-expression': 'error',
 
     // Disallow use of constant expressions in conditions
     'no-constant-condition': 'warn',
+
+    // Disallow returning value in constructor
+    'no-constructor-return': 'error',
 
     // Disallow control characters in regular expressions
     'no-control-regex': 'error',
@@ -37,6 +52,9 @@ module.exports = {
     // Disallow duplicate arguments in functions
     'no-dupe-args': 'error',
 
+    // Disallow duplicate class members
+    'no-dupe-class-members': 'error',
+
     // Disallow duplicate conditions in if-else-if chains
     'no-dupe-else-if': 'error',
 
@@ -46,17 +64,20 @@ module.exports = {
     // Disallow a duplicate case label.
     'no-duplicate-case': 'error',
 
-    // Disallow empty statements
-    'no-empty': 'error',
+    // Disallow importing from the same path more than once
+    'no-duplicate-imports': 'off',
 
     // Disallow the use of empty character classes in regular expressions
     'no-empty-character-class': 'error',
 
+    // Disallow empty destructuring patterns
+    'no-empty-pattern': 'error',
+
     // Disallow assigning to the exception in a catch block
     'no-ex-assign': 'error',
 
-    // Disallow double-negation boolean casts in a boolean context
-    'no-extra-boolean-cast': 'error',
+    // Disallow fallthrough of case statements
+    'no-fallthrough': 'error',
 
     // Disallow overwriting functions written as function declarations
     'no-func-assign': 'error',
@@ -79,11 +100,11 @@ module.exports = {
     // Disallow characters which are made with multiple code points in character class syntax
     'no-misleading-character-class': 'error',
 
-    // Disallow the use of object properties of the global object (Math and JSON) as functions
-    'no-obj-calls': 'error',
-
     // Disallow new operators with global non-constructor functions
     'no-new-native-nonconstructor': 'error',
+
+    // Disallow the use of object properties of the global object (Math and JSON) as functions
+    'no-obj-calls': 'error',
 
     // Disallow returning values from Promise executor functions
     'no-promise-executor-return': 'error',
@@ -91,8 +112,13 @@ module.exports = {
     // Disallow use of Object.prototypes builtins directly
     'no-prototype-builtins': 'error',
 
-    // Disallow multiple spaces in a regular expression literal
-    'no-regex-spaces': 'error',
+    // Disallow self assignment
+    'no-self-assign': ['error', {
+        props: true,
+    }],
+
+    // Disallow comparisons where both sides are exactly the same
+    'no-self-compare': 'error',
 
     // Disallow returning values from setters
     'no-setter-return': 'error',
@@ -103,8 +129,17 @@ module.exports = {
     // Disallow template literal placeholder syntax in regular strings
     'no-template-curly-in-string': 'error',
 
+    // Disallow to use this/super before super() calling in constructors
+    'no-this-before-super': 'error',
+
+    // Disallow use of undeclared variables unless mentioned in a /*global */ block
+    'no-undef': 'error',
+
     // Avoid code that looks like two expressions but is actually one
     'no-unexpected-multiline': 'error',
+
+    // Disallow unmodified conditions of loops
+    'no-unmodified-loop-condition': 'off',
 
     // Disallow unreachable statements after a return, throw, continue, or break statement
     'no-unreachable': 'error',
@@ -125,6 +160,23 @@ module.exports = {
 
     // Disallow Unused Private Class Members
     'no-unused-private-class-members': 'error',
+
+    // Disallow declaration of variables that are not used in the code
+    'no-unused-vars': ['error', {
+        vars: 'all',
+        args: 'after-used',
+        ignoreRestSiblings: true,
+    }],
+
+    // Disallow use of variables before they are defined
+    'no-use-before-define': ['error', {
+        functions: false,
+        classes: false,
+        variables: true,
+    }],
+
+    // Disallow variable assignments when the value is not used
+    'no-useless-assignment': 'error',
 
     // Disallow useless backreferences in regular expressions
     'no-useless-backreference': 'error',

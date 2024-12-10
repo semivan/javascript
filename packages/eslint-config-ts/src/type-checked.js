@@ -6,6 +6,5 @@ module.exports = {
         ...rules.js,
         ...rules.ts.main,
         ...rules.ts.typeChecked,
-        ...rules.legacy,
     },
 };

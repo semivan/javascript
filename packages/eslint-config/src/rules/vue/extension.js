@@ -1,6 +1,6 @@
-const jsRules = require('../js');
+import jsRules from '../js/index.js';
 
-module.exports = {
+export default {
     // Enforce linebreaks after opening and before closing array brackets in <template>
     'vue/array-bracket-newline': jsRules['@stylistic/array-bracket-newline'] ?? 'off',
 

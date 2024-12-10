@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     // Disallow use other than available lang
     'vue/block-lang': 'off',
 
@@ -74,6 +74,12 @@ module.exports = {
     // Enforce maximum number of lines in Vue SFC blocks
     'vue/max-lines-per-block': 'off',
 
+    // ???
+    // 'vue/max-props': null,
+
+    // ???
+    // 'vue/max-template-depth': null,
+
     // Enforce new lines between multi-line properties in Vue components
     'vue/new-line-between-multi-line-property': 'off',
 
@@ -85,6 +91,9 @@ module.exports = {
 
     // Disallow boolean defaults
     'vue/no-boolean-default': 'off',
+
+    // ???
+    // 'vue/no-deprecated-delete-set': null,
 
     // Disallow deprecated model definition
     'vue/no-deprecated-model-definition': 'error',
@@ -138,6 +147,9 @@ module.exports = {
 
     // Disallow specific argument in v-bind
     'vue/no-restricted-v-bind': 'off',
+
+    // ???
+    // 'vue/no-restricted-v-on': null,
 
     // Disallow v-if directives on root element
     'vue/no-root-v-if': 'off',
@@ -206,6 +218,12 @@ module.exports = {
     // Require shorthand form attribute when v-bind value is true
     'vue/prefer-true-attribute-shorthand': 'off',
 
+    // ???
+    // 'vue/prefer-use-template-ref': null,
+
+    // ???
+    // 'vue/require-default-export': null,
+
     // Require the component to be directly exported
     'vue/require-direct-export': ['error', {
         disallowFunctionalComponentFunction: false,
@@ -213,6 +231,9 @@ module.exports = {
 
     // Require type definitions in emits
     'vue/require-emit-validator': 'error',
+
+    // ???
+    // 'vue/require-explicit-slots': null,
 
     // Require declare public properties using expose
     'vue/require-expose': 'off',
@@ -238,11 +259,17 @@ module.exports = {
     // Require ref and shallowRef functions to be strongly typed
     'vue/require-typed-ref': 'error',
 
+    // ???
+    // 'vue/restricted-component-names': null,
+
     // Enforce consistent indentation in <script>
     'vue/script-indent': ['error', 4, {
         baseIndent: 1,
         switchCase: 1,
     }],
+
+    // ???
+    // 'vue/slot-name-casing': null,
 
     // Enforce sort-keys in a manner that is compatible with order-in-components
     'vue/sort-keys': 'off',

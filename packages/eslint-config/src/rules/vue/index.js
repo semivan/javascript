@@ -1,4 +1,7 @@
-module.exports = {
-    ...require('./extension'),
-    ...require('./uncategorized'),
+import extension from './extension.js';
+import uncategorized from './uncategorized.js';
+
+export default {
+    ...extension,
+    ...uncategorized,
 };

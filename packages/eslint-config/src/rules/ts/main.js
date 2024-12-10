@@ -1,6 +1,6 @@
-const jsRules = require('../js');
+import jsRules from '../js/index.js';
 
-module.exports = {
+export default {
     'class-methods-use-this': 'off',
     'default-param-last': 'off',
     'init-declarations': 'off',
@@ -9,8 +9,8 @@ module.exports = {
     'no-empty-function': 'off',
     'no-invalid-this': 'off',
     'no-loop-func': 'off',
-    'no-loss-of-precision': 'off',
     'no-magic-numbers': 'off',
+    // 'no-restricted-imports': 'off',
     'no-shadow': 'off',
     'no-unused-expressions': 'off',
     'no-unused-vars': 'off',
@@ -31,9 +31,6 @@ module.exports = {
 
     // Disallow // tslint:<rule-flag> comments
     '@typescript-eslint/ban-tslint-comment': 'error',
-
-    // Disallow certain types
-    '@typescript-eslint/ban-types': 'error',
 
     // Enforce that literals on classes are exposed in a consistent style
     '@typescript-eslint/class-literal-property-style': 'error',
@@ -111,10 +108,8 @@ module.exports = {
         ],
     }],
 
-    // Disallow the declaration of empty interfaces
-    '@typescript-eslint/no-empty-interface': ['error', {
-        allowSingleExtends: true,
-    }],
+    // Disallow accidentally using the "empty object" type
+    '@typescript-eslint/no-empty-object-type': 'error',
 
     // Disallow the any type
     '@typescript-eslint/no-explicit-any': ['error', {
@@ -145,9 +140,6 @@ module.exports = {
     // Disallow function declarations that contain unsafe references inside loop statements
     '@typescript-eslint/no-loop-func': jsRules['no-loop-func'] ?? 'off',
 
-    // Disallow literal numbers that lose precision
-    '@typescript-eslint/no-loss-of-precision': jsRules['no-loss-of-precision'] ?? 'off',
-
     // Disallow magic numbers
     '@typescript-eslint/no-magic-numbers': jsRules['no-magic-numbers'] ?? 'off',
 
@@ -172,17 +164,29 @@ module.exports = {
     // Disallow invocation of require()
     '@typescript-eslint/no-require-imports': 'off',
 
+    // Disallow specified modules when loaded by import
+    // '@typescript-eslint/no-restricted-imports': 'off',
+
+    // Disallow certain types
+    // '@typescript-eslint/no-restricted-types': 'off',
+
     // Disallow variable declarations from shadowing variables declared in the outer scope
     '@typescript-eslint/no-shadow': jsRules['no-shadow'] ?? 'off',
 
     // Disallow aliasing this
     '@typescript-eslint/no-this-alias': 'error',
 
+    // Disallow unnecessary assignment of constructor property parameter
+    '@typescript-eslint/no-unnecessary-parameter-property-assignment': 'error',
+
     // Disallow unnecessary constraints on generic types
     '@typescript-eslint/no-unnecessary-type-constraint': 'error',
 
     // Disallow unsafe declaration merging
     '@typescript-eslint/no-unsafe-declaration-merging': 'error',
+
+    // Disallow using the unsafe built-in Function type
+    '@typescript-eslint/no-unsafe-function-type': 'error',
 
     // Disallow unused expressions
     '@typescript-eslint/no-unused-expressions': jsRules['no-unused-expressions'] ?? 'off',
@@ -203,8 +207,8 @@ module.exports = {
     // Disallow empty exports that don't change anything in a module file
     '@typescript-eslint/no-useless-empty-export': 'off',
 
-    // Disallow require statements except in import statements
-    '@typescript-eslint/no-var-requires': 'error',
+    // Disallow using confusing built-in primitive class wrappers
+    '@typescript-eslint/no-wrapper-object-types': 'error',
 
     // Require or disallow parameter properties in class constructors
     '@typescript-eslint/parameter-properties': 'off',
@@ -226,12 +230,6 @@ module.exports = {
 
     // Require using namespace keyword over module keyword to declare custom TypeScript modules
     '@typescript-eslint/prefer-namespace-keyword': 'error',
-
-    // Enforce using @ts-expect-error over @ts-ignore
-    '@typescript-eslint/prefer-ts-expect-error': 'error',
-
-    // Enforce constituents of a type union/intersection to be sorted alphabetically
-    '@typescript-eslint/sort-type-constituents': 'off',
 
     // Disallow certain triple slash directives in favor of ES6-style import declarations
     '@typescript-eslint/triple-slash-reference': 'error',

@@ -1,31 +1,21 @@
-module.exports = {
-    env: {
-        browser: true,
-        es2021: true,
-        node: true,
+import globals from 'globals';
+import stylistic from '@stylistic/eslint-plugin';
+import rules from './rules/index.js';
+
+export default {
+    plugins: {
+        '@stylistic': stylistic,
     },
-    plugins: [
-        '@stylistic',
-    ],
-    parserOptions: {
+
+    languageOptions: {
+        globals: {
+            ...globals.browser,
+            ...globals.node,
+        },
+
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
-    overrides: [
-        {
-            env: {
-                node: true,
-            },
-            files: [
-                '.eslintrc.{js,cjs}',
-            ],
-            parserOptions: {
-                sourceType: 'script',
-            },
-        },
-    ],
-    rules: {
-        ...require('./rules').js,
-        ...require('./rules').legacy,
-    },
+
+    rules: rules.js,
 };

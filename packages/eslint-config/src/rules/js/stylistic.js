@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     // Enforce linebreaks after opening and before closing array brackets
     '@stylistic/array-bracket-newline': ['error', 'consistent'],
 
@@ -55,6 +55,9 @@ module.exports = {
 
     // Enforce consistent spacing inside computed property brackets
     '@stylistic/computed-property-spacing': ['error', 'never'],
+
+    // Enforce consistent line breaks after opening and before closing braces
+    '@stylistic/curly-newline': 'off',
 
     // Enforce consistent newlines before and after dots
     '@stylistic/dot-location': ['error', 'property'],
@@ -131,6 +134,12 @@ module.exports = {
     // Enforce or disallow spaces around equal signs in JSX attributes
     '@stylistic/jsx-equals-spacing': ['error', 'never'],
 
+    // Enforce proper position of the first property in JSX
+    '@stylistic/jsx-first-prop-new-line': 'off',
+
+    // Enforce line breaks before and after JSX elements when they are used as arguments to a function
+    '@stylistic/jsx-function-call-newline': 'off',
+
     // Enforce JSX indentation
     '@stylistic/jsx-indent': ['error', 4],
 
@@ -150,6 +159,13 @@ module.exports = {
 
     // Require one JSX element per line
     '@stylistic/jsx-one-expression-per-line': 'off',
+
+    // Enforce PascalCase for user-defined JSX components
+    '@stylistic/jsx-pascal-case': [2, {
+        allowAllCaps: false,
+        allowNamespace: false,
+        allowLeadingUnderscore: false,
+    }],
 
     // Disallow multiple spaces between inline JSX props
     '@stylistic/jsx-props-no-multi-spaces': 'error',
@@ -189,6 +205,9 @@ module.exports = {
         before: true,
         after: true,
     }],
+
+    // Enforce position of line comments
+    '@stylistic/line-comment-position': 'off',
 
     // Enforce consistent linebreak style
     '@stylistic/linebreak-style': ['error', 'unix'],
@@ -230,6 +249,9 @@ module.exports = {
         },
         multilineDetection: 'brackets',
     }],
+
+    // Enforce a particular style for multiline comments
+    '@stylistic/multiline-comment-style': 'off',
 
     // Enforce newlines between operands of ternary expressions
     '@stylistic/multiline-ternary': ['error', 'always-multiline'],
