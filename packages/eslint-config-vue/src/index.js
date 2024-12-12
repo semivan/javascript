@@ -1,10 +1,13 @@
-const rules = require('@semivan/eslint-config/rules');
+import rules from '@semivan/eslint-config/rules';
+import base from './base.js';
 
-module.exports = {
-    ...require('./base'),
-    rules: {
-        ...rules.js,
-        ...rules.ts.main,
-        ...rules.vue,
+export default [
+    ...base,
+    {
+        rules: {
+            ...rules.js,
+            ...rules.ts.main,
+            ...rules.vue,
+        },
     },
-};
+];
