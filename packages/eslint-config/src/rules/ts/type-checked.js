@@ -121,9 +121,6 @@ export default {
     // Require unary negation to take a number
     '@typescript-eslint/no-unsafe-unary-minus': 'off',
 
-    // Disallow unnecessary template literals
-    '@typescript-eslint/no-useless-template-literals': 'error',
-
     // Enforce non-null assertions over explicit type casts
     '@typescript-eslint/non-nullable-type-assertion-style': 'off',
 
