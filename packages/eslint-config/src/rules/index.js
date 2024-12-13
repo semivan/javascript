@@ -1,9 +1,13 @@
-import js from './js/index.js';
-import ts from './ts/index.js';
-import vue from './vue/index.js';
+import formatting from './formatting.js';
+import possibleProblems from './possible-problems.js';
+import stylistic from './stylistic.js';
+import suggestions from './suggestions.js';
+
+// Object.values(document.querySelectorAll('.rule__name')).map(code => `'${code.innerText}': null`).join(', ')
 
 export default {
-    js,
-    ts,
-    vue,
+    ...formatting,
+    ...possibleProblems,
+    ...stylistic,
+    ...suggestions,
 };

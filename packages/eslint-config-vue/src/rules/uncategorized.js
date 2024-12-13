@@ -74,11 +74,11 @@ export default {
     // Enforce maximum number of lines in Vue SFC blocks
     'vue/max-lines-per-block': 'off',
 
-    // ???
-    // 'vue/max-props': null,
+    // Enforce maximum number of props in Vue component
+    'vue/max-props': 'off',
 
-    // ???
-    // 'vue/max-template-depth': null,
+    // Enforce maximum depth of template
+    'vue/max-template-depth': 'off',
 
     // Enforce new lines between multi-line properties in Vue components
     'vue/new-line-between-multi-line-property': 'off',
@@ -92,8 +92,8 @@ export default {
     // Disallow boolean defaults
     'vue/no-boolean-default': 'off',
 
-    // ???
-    // 'vue/no-deprecated-delete-set': null,
+    // Disallow using deprecated $delete and $set
+    'vue/no-deprecated-delete-set': 'error',
 
     // Disallow deprecated model definition
     'vue/no-deprecated-model-definition': 'error',
@@ -148,8 +148,8 @@ export default {
     // Disallow specific argument in v-bind
     'vue/no-restricted-v-bind': 'off',
 
-    // ???
-    // 'vue/no-restricted-v-on': null,
+    // Disallow specific argument in v-on
+    'vue/no-restricted-v-on': 'off',
 
     // Disallow v-if directives on root element
     'vue/no-root-v-if': 'off',
@@ -218,11 +218,11 @@ export default {
     // Require shorthand form attribute when v-bind value is true
     'vue/prefer-true-attribute-shorthand': 'off',
 
-    // ???
-    // 'vue/prefer-use-template-ref': null,
+    // Require using useTemplateRef instead of ref/shallowRef for template refs
+    'vue/prefer-use-template-ref': 'error',
 
-    // ???
-    // 'vue/require-default-export': null,
+    // Require components to be the default export
+    'vue/require-default-export': 'error',
 
     // Require the component to be directly exported
     'vue/require-direct-export': ['error', {
@@ -232,8 +232,9 @@ export default {
     // Require type definitions in emits
     'vue/require-emit-validator': 'error',
 
-    // ???
-    // 'vue/require-explicit-slots': null,
+    // TODO: enable?
+    // Require slots to be explicitly defined
+    'vue/require-explicit-slots': 'off',
 
     // Require declare public properties using expose
     'vue/require-expose': 'off',
@@ -259,8 +260,8 @@ export default {
     // Require ref and shallowRef functions to be strongly typed
     'vue/require-typed-ref': 'error',
 
-    // ???
-    // 'vue/restricted-component-names': null,
+    // Enforce using only specific component names
+    'vue/restricted-component-names': 'off',
 
     // Enforce consistent indentation in <script>
     'vue/script-indent': ['error', 4, {
@@ -268,8 +269,8 @@ export default {
         switchCase: 1,
     }],
 
-    // ???
-    // 'vue/slot-name-casing': null,
+    // Enforce specific casing for slot names
+    'vue/slot-name-casing': ['error', 'camelCase'],
 
     // Enforce sort-keys in a manner that is compatible with order-in-components
     'vue/sort-keys': 'off',

@@ -1,4 +1,4 @@
-import jsRules from '../js/index.js';
+import parentRules from '@semivan/eslint-config/rules';
 
 export default {
     'class-methods-use-this': 'off',
@@ -36,7 +36,7 @@ export default {
     '@typescript-eslint/class-literal-property-style': 'error',
 
     // Enforce that class methods utilize this
-    '@typescript-eslint/class-methods-use-this': jsRules['class-methods-use-this'] ?? 'off',
+    '@typescript-eslint/class-methods-use-this': parentRules['class-methods-use-this'] ?? 'off',
 
     // Enforce specifying generic type arguments on type annotation or constructor name of a constructor call
     '@typescript-eslint/consistent-generic-constructors': ['error', 'constructor'],
@@ -59,7 +59,7 @@ export default {
     }],
 
     // Enforce default parameters to be last
-    '@typescript-eslint/default-param-last': jsRules['default-param-last'] ?? 'off',
+    '@typescript-eslint/default-param-last': parentRules['default-param-last'] ?? 'off',
 
     // Require explicit return types on functions and class methods
     '@typescript-eslint/explicit-function-return-type': 'off',
@@ -71,10 +71,10 @@ export default {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
 
     // Require or disallow initialization in variable declarations
-    '@typescript-eslint/init-declarations': jsRules['init-declarations'] ?? 'off',
+    '@typescript-eslint/init-declarations': parentRules['init-declarations'] ?? 'off',
 
     // Enforce a maximum number of parameters in function definitions
-    '@typescript-eslint/max-params': jsRules['max-params'] ?? 'off',
+    '@typescript-eslint/max-params': parentRules['max-params'] ?? 'off',
 
     // Require a consistent member declaration order
     '@typescript-eslint/member-ordering': 'off',
@@ -83,7 +83,7 @@ export default {
     '@typescript-eslint/method-signature-style': ['error', 'property'],
 
     // Disallow generic Array constructors
-    '@typescript-eslint/no-array-constructor': jsRules['no-array-constructor'] ?? 'off',
+    '@typescript-eslint/no-array-constructor': parentRules['no-array-constructor'] ?? 'off',
 
     // Disallow non-null assertion in locations that may be confusing
     '@typescript-eslint/no-confusing-non-null-assertion': 'error',
@@ -98,9 +98,9 @@ export default {
     '@typescript-eslint/no-dynamic-delete': 'off',
 
     // Disallow empty functions
-    '@typescript-eslint/no-empty-function': [jsRules['no-empty-function']?.[0] ?? 'off', {
+    '@typescript-eslint/no-empty-function': [parentRules['no-empty-function']?.[0] ?? 'off', {
         allow: [
-            ...(jsRules['no-empty-function']?.[1].allow ?? []),
+            ...(parentRules['no-empty-function']?.[1].allow ?? []),
             'private-constructors',
             'protected-constructors',
             'decoratedFunctions',
@@ -138,10 +138,10 @@ export default {
     '@typescript-eslint/no-invalid-void-type': 'off',
 
     // Disallow function declarations that contain unsafe references inside loop statements
-    '@typescript-eslint/no-loop-func': jsRules['no-loop-func'] ?? 'off',
+    '@typescript-eslint/no-loop-func': parentRules['no-loop-func'] ?? 'off',
 
     // Disallow magic numbers
-    '@typescript-eslint/no-magic-numbers': jsRules['no-magic-numbers'] ?? 'off',
+    '@typescript-eslint/no-magic-numbers': parentRules['no-magic-numbers'] ?? 'off',
 
     // Enforce valid definition of new and constructor
     '@typescript-eslint/no-misused-new': 'error',
@@ -171,7 +171,7 @@ export default {
     // '@typescript-eslint/no-restricted-types': 'off',
 
     // Disallow variable declarations from shadowing variables declared in the outer scope
-    '@typescript-eslint/no-shadow': jsRules['no-shadow'] ?? 'off',
+    '@typescript-eslint/no-shadow': parentRules['no-shadow'] ?? 'off',
 
     // Disallow aliasing this
     '@typescript-eslint/no-this-alias': 'error',
@@ -189,20 +189,20 @@ export default {
     '@typescript-eslint/no-unsafe-function-type': 'error',
 
     // Disallow unused expressions
-    '@typescript-eslint/no-unused-expressions': jsRules['no-unused-expressions'] ?? 'off',
+    '@typescript-eslint/no-unused-expressions': parentRules['no-unused-expressions'] ?? 'off',
 
     // Disallow unused variables
-    '@typescript-eslint/no-unused-vars': jsRules['no-unused-vars'] ?? 'off',
+    '@typescript-eslint/no-unused-vars': parentRules['no-unused-vars'] ?? 'off',
 
     // Disallow the use of variables before they are defined
-    '@typescript-eslint/no-use-before-define': [jsRules['no-use-before-define']?.[0] ?? 'off', {
-        ...(jsRules['no-use-before-define']?.[1] ?? {}),
+    '@typescript-eslint/no-use-before-define': [parentRules['no-use-before-define']?.[0] ?? 'off', {
+        ...(parentRules['no-use-before-define']?.[1] ?? {}),
         enums: false,
         typedefs: false,
     }],
 
     // Disallow unnecessary constructors
-    '@typescript-eslint/no-useless-constructor': jsRules['no-useless-constructor'] ?? 'off',
+    '@typescript-eslint/no-useless-constructor': parentRules['no-useless-constructor'] ?? 'off',
 
     // Disallow empty exports that don't change anything in a module file
     '@typescript-eslint/no-useless-empty-export': 'off',

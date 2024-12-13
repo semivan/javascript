@@ -1,4 +1,4 @@
-import jsRules from '../js/index.js';
+import parentRules from '@semivan/eslint-config/rules';
 
 export default {
     'dot-notation': 'off',
@@ -20,7 +20,7 @@ export default {
     }],
 
     // Enforce dot notation whenever possible
-    '@typescript-eslint/dot-notation': jsRules['dot-notation'] ?? 'off',
+    '@typescript-eslint/dot-notation': parentRules['dot-notation'] ?? 'off',
 
     // TODO: enable?
     // Enforce naming conventions for everything across a codebase
@@ -55,7 +55,7 @@ export default {
     '@typescript-eslint/no-for-in-array': 'error',
 
     // Disallow the use of eval()-like methods
-    '@typescript-eslint/no-implied-eval': jsRules['no-implied-eval'] ?? 'off',
+    '@typescript-eslint/no-implied-eval': parentRules['no-implied-eval'] ?? 'off',
 
     // Disallow the void operator except when used to discard a value
     '@typescript-eslint/no-meaningless-void-operator': 'error',
@@ -74,7 +74,7 @@ export default {
     '@typescript-eslint/no-redundant-type-constituents': 'error',
 
     // Disallow throwing literals as exceptions
-    // '@typescript-eslint/no-throw-literal': jsRules['no-throw-literal'] ?? 'off',
+    // '@typescript-eslint/no-throw-literal': parentRules['no-throw-literal'] ?? 'off',
 
     // Disallow unnecessary equality comparisons against boolean literals
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
@@ -125,10 +125,10 @@ export default {
     '@typescript-eslint/non-nullable-type-assertion-style': 'off',
 
     // Disallow throwing non-Error values as exceptions
-    '@typescript-eslint/only-throw-error': jsRules['no-throw-literal'] ?? 'off',
+    '@typescript-eslint/only-throw-error': parentRules['no-throw-literal'] ?? 'off',
 
     // Require destructuring from arrays and/or objects
-    '@typescript-eslint/prefer-destructuring': jsRules['prefer-destructuring'] ?? 'off',
+    '@typescript-eslint/prefer-destructuring': parentRules['prefer-destructuring'] ?? 'off',
 
     // Enforce the use of Array.prototype.find() over Array.prototype.filter() followed by [0] when looking for a single result
     '@typescript-eslint/prefer-find': 'error',
@@ -177,7 +177,7 @@ export default {
     '@typescript-eslint/require-array-sort-compare': 'off',
 
     // Disallow async functions which have no await expression
-    '@typescript-eslint/require-await': jsRules['require-await'] ?? 'off',
+    '@typescript-eslint/require-await': parentRules['require-await'] ?? 'off',
 
     // Require both operands of addition to be the same type and be bigint, number, or string
     '@typescript-eslint/restrict-plus-operands': 'error',
@@ -192,7 +192,7 @@ export default {
     }],
 
     // Enforce consistent returning of awaited values
-    '@typescript-eslint/return-await': jsRules['no-return-await'] ?? 'off',
+    '@typescript-eslint/return-await': parentRules['no-return-await'] ?? 'off',
 
     // Disallow certain types in boolean expressions
     '@typescript-eslint/strict-boolean-expressions': 'off',

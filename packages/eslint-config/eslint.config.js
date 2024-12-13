@@ -1,5 +1,5 @@
-import config from './src/index.js';
+import createConfig from './src/index.js';
 
 export default [
-    config,
+    ...createConfig(),
 ];

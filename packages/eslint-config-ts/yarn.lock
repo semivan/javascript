@@ -159,27 +159,24 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@semivan/eslint-config-ts@workspace:."
   dependencies:
-    "@semivan/eslint-config": "npm:^2.0.1"
-    "@stylistic/eslint-plugin": "npm:^2.12.1"
-    "@typescript-eslint/eslint-plugin": "npm:^8.18.0"
-    "@typescript-eslint/parser": "npm:^8.18.0"
+    "@semivan/eslint-config": "npm:^2.2.0"
     eslint: "npm:^9.16.0"
     typescript: "npm:^5.7.2"
+    typescript-eslint: "npm:^8.18.0"
   peerDependencies:
-    "@stylistic/eslint-plugin": "*"
-    "@typescript-eslint/eslint-plugin": "*"
     eslint: "*"
     typescript: "*"
   languageName: unknown
   linkType: soft
 
-"@semivan/eslint-config@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@semivan/eslint-config@npm:2.0.1"
+"@semivan/eslint-config@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@semivan/eslint-config@npm:2.2.0"
+  dependencies:
+    "@stylistic/eslint-plugin": "npm:^2.12.1"
   peerDependencies:
-    "@stylistic/eslint-plugin": "*"
     eslint: "*"
-  checksum: 9cbdecfb901bce9d227ab13950024f7764c0b3e46ba1ec6b203fed841bc04bc761de57667d5ef1a0c5ed27910f9ed37f74886eda13eac8d15062cc0b882e93c7
+  checksum: d9ed270dd075a815271e83341335a0ff15a2140de216ce417997ff7503c906fafc2960c2f067789a57d6e3b4c494dd76742bea9f8d8000e7ceff59777132d446
   languageName: node
   linkType: hard
 
@@ -212,7 +209,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^8.18.0":
+"@typescript-eslint/eslint-plugin@npm:8.18.0":
   version: 8.18.0
   resolution: "@typescript-eslint/eslint-plugin@npm:8.18.0"
   dependencies:
@@ -233,7 +230,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^8.18.0":
+"@typescript-eslint/parser@npm:8.18.0":
   version: 8.18.0
   resolution: "@typescript-eslint/parser@npm:8.18.0"
   dependencies:
@@ -1080,6 +1077,20 @@ __metadata:
   dependencies:
     prelude-ls: "npm:^1.2.1"
   checksum: 7b3fd0ed43891e2080bf0c5c504b418fbb3e5c7b9708d3d015037ba2e6323a28152ec163bcb65212741fa5d2022e3075ac3c76440dbd344c9035f818e8ecee58
+  languageName: node
+  linkType: hard
+
+"typescript-eslint@npm:^8.18.0":
+  version: 8.18.0
+  resolution: "typescript-eslint@npm:8.18.0"
+  dependencies:
+    "@typescript-eslint/eslint-plugin": "npm:8.18.0"
+    "@typescript-eslint/parser": "npm:8.18.0"
+    "@typescript-eslint/utils": "npm:8.18.0"
+  peerDependencies:
+    eslint: ^8.57.0 || ^9.0.0
+    typescript: ">=4.8.4 <5.8.0"
+  checksum: dda882cbfc1ebad6903864571bc69bfd7e32e17fec67d98fdfab2bd652348d425c6a1c3697734d59cd5dd15d26d496db3c3808c1de5840fa29b9e76184fa1865
   languageName: node
   linkType: hard
 
